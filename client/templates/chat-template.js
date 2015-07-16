@@ -9,14 +9,20 @@ Template.appChat.events({
 		Messages.remove(this._id);
 		return false;
 	},
-	"keyup .txtText": function (event) {
+	"keyup .Birthdate": function (event) {
 		if (event.keyCode == 13){
 			Messages.insert({
-				name: $(".txtName").val(),
-				text: $(".txtText").val(),
+				StudentNumber: $(".StudentNumber").val(),
+				Lastname: $(".Lastname").val(),
+				Firstname: $(".Firstname").val(),
+				Age: $(".Age").val(),
+				Birthdate: $(".Birthdate").val(),
 				createdAt: new Date()
 			});
 		}
+	 $(".Birthdate").val(),
+	 $(".Birthdate").focus();
+
 		return false;
 	}
 });
